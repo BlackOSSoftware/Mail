@@ -135,83 +135,74 @@ export function renderTemplate(template: TemplateKey) {
       return {
         subject: "Market Data Purchase Successfully",
         html: `
-          <div style="margin:0;padding:0;background:#0b1220;">
-            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:#0b1220;padding:36px 0;">
+          <div style="margin:0;padding:0;background:#ffffff;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:#ffffff;padding:36px 0;">
               <tr>
                 <td align="center">
-                  <table role="presentation" cellpadding="0" cellspacing="0" width="680" style="background:#0f172a;border-radius:20px;overflow:hidden;font-family:'Helvetica Neue', 'Segoe UI', Arial, sans-serif;color:#e2e8f0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="680" style="background:#ffffff;border-radius:20px;overflow:hidden;font-family:'Helvetica Neue', 'Segoe UI', Arial, sans-serif;color:#0f172a;border:1px solid #e5e7eb;">
                     <tr>
-                      <td style="padding:28px 36px;background:radial-gradient(circle at top left,#1e293b,#0f172a 55%,#0b1220);">
+                      <td style="padding:26px 36px;background:#ffffff;border-bottom:1px solid #e5e7eb;">
                         <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
                             <td align="left" style="vertical-align:middle;">
-                              <img src="${logoUrl}" alt="Aurora Market" width="130" style="display:block;height:auto;border:0;"/>
+                              <img src="${logoUrl}" alt="Aurora Market" width="120" style="display:block;height:auto;border:0;"/>
                             </td>
-                            <td align="right" style="color:#94a3b8;font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;">
-                              Data Delivery
+                            <td align="right" style="color:#6b7280;font-size:11px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;">
+                              Market Data
                             </td>
                           </tr>
                         </table>
-                        <h1 style="margin:22px 0 8px;color:#f8fafc;font-size:28px;">Market Data Purchase Successfully</h1>
-                        <p style="margin:0;color:#cbd5f5;line-height:1.7;">
-                          Your Aurora Market data feed is now active and ready for production use.
-                        </p>
+                        <div style="margin-top:18px;padding:18px 20px;background:#0f172a;border-radius:14px;">
+                          <h1 style="margin:0 0 6px;color:#ffffff;font-size:24px;">Market Data Purchase Successfully</h1>
+                          <p style="margin:0;color:#cbd5f5;line-height:1.6;">
+                            Your Aurora Market data feed has been activated and is ready for use.
+                          </p>
+                        </div>
                       </td>
                     </tr>
                     <tr>
                       <td style="padding:30px 36px;background:#ffffff;color:#0f172a;">
                         <p style="margin:0 0 16px;line-height:1.7;color:#1f2937;">
-                          Your purchase has been completed successfully. Below is a quick overview of the
-                          segments now live on your account.
+                          Your purchase has been completed successfully. A summary of the data coverage is
+                          provided below.
                         </p>
 
                         <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="margin:18px 0;">
                           <tr>
-                            <td style="padding:18px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;">
-                              <p style="margin:0 0 10px;font-weight:700;color:#0f172a;">Live market coverage</p>
-                              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="color:#111;font-size:14.5px;line-height:1.7;">
-                                <tr>
-                                  <td style="padding:6px 0;">• FX majors and minors with streaming bid/ask updates</td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:6px 0;">• COMEX metals pricing including gold, silver, and key contracts</td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:6px 0;">• Cross‑segment coverage for consistent market context</td>
-                                </tr>
-                              </table>
+                            <td style="padding:20px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:16px;">
+                              <p style="margin:0 0 10px;font-weight:700;color:#0f172a;">Live coverage</p>
+                              <ul style="margin:0;padding-left:18px;line-height:1.7;color:#111;font-size:14.5px;">
+                                <li>Forex majors and minors with streaming bid/ask updates</li>
+                                <li>COMEX metals pricing including gold, silver, and key contracts</li>
+                                <li>Cross‑segment coverage for consistent market context</li>
+                              </ul>
                             </td>
                           </tr>
                         </table>
 
                         <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="margin:18px 0;">
                           <tr>
-                            <td style="padding:18px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:14px;">
+                            <td style="padding:20px;background:#f8fafc;border:1px solid #dbeafe;border-radius:16px;">
                               <p style="margin:0 0 10px;font-weight:700;color:#0f172a;">Recommended actions</p>
-                              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="color:#111;font-size:14.5px;line-height:1.7;">
-                                <tr>
-                                  <td style="padding:6px 0;">• Open your data console to confirm delivery status</td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:6px 0;">• Validate symbols, timeframes, and delivery protocol</td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:6px 0;">• Contact the Aurora integration desk for onboarding support</td>
-                                </tr>
-                              </table>
+                              <ul style="margin:0;padding-left:18px;line-height:1.7;color:#111;font-size:14.5px;">
+                                <li>Open your data console to confirm delivery status</li>
+                                <li>Validate symbols, timeframes, and delivery protocol</li>
+                                <li>Contact the Aurora integration desk for onboarding support</li>
+                              </ul>
                             </td>
                           </tr>
                         </table>
 
                         <p style="margin:14px 0 0;line-height:1.7;color:#1f2937;">
-                          We’re committed to consistent, accurate pricing and reliable data delivery.
+                          We’re committed to consistent, accurate pricing and reliable delivery across all market
+                          segments.
                         </p>
 
                         <p style="margin-top:26px;">Regards,<br/>Team Aurora Market</p>
                       </td>
                     </tr>
                     <tr>
-                      <td style="padding:18px 36px;color:#94a3b8;font-size:12px;background:#0b1220;">
+                      <td style="padding:18px 36px;color:#94a3b8;font-size:12px;background:#f9fafb;border-top:1px solid #e5e7eb;">
                         This is a system-generated message. Please do not reply.
                       </td>
                     </tr>
