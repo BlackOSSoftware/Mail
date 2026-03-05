@@ -16,16 +16,15 @@ declare global {
   var mongooseCache: MongooseCache | undefined;
 }
 
-let cached = global.mongooseCache;
-if (!cached) {
-  cached = global.mongooseCache = { conn: null, promise: null };
-}
+const cached =
+  global.mongooseCache ??
+  (global.mongooseCache = { conn: null, promise: null });
 
 export async function connectDb() {
   if (cached.conn) return cached.conn;
 
   if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGODB_URI, {
+    cached.promise = mongoose.connect(MONGODB_URI as string, {
       autoIndex: true,
     });
   }
