@@ -6,8 +6,8 @@ import { ThemeToggle } from "./components/ThemeToggle";
 type SenderKey = "primary" | "secondary";
 
 const senderOptions: { key: SenderKey; label: string; hint: string }[] = [
-  { key: "primary", label: "GoDaddy Email 1", hint: "Primary sender" },
-  { key: "secondary", label: "GoDaddy Email 2", hint: "Secondary sender" },
+  { key: "primary", label: "aws@cloudserver.services", hint: "Primary sender" },
+  { key: "secondary", label: "tradingdata@auroramarket.bond", hint: "Secondary sender" },
 ];
 
 const templateOptions = [
